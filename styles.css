@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Gradient Background */
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+}
+
+/* Glassmorphism Box */
+.box {
+    width: 320px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);   /* transparent */
+    backdrop-filter: blur(12px);             /* blur effect */
+    -webkit-backdrop-filter: blur(12px);
+    
+    border-radius: 15px;
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);  /* thin border */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.08);
+}
+
+.box h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Input fields with transparency */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #e2e8f0;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    color: white;
+
+    margin-top: 10px;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e40af, #1d4ed8);
+    transform: scale(1.04);
+}
+
+/* Link */
+span {
+    color: #93c5fd;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+/* Error msg */
+#reg-msg, #log-msg {
+    margin-top: 10px;
+    color: #fca5a5;
+    font-size: 14px;
+}
+
+/* Secure Page Welcome */
+#welcome {
+    margin-bottom: 15px;
+    color: #bbf7d0;
+    font-weight: bold;
+    font-size: 18px;
+}

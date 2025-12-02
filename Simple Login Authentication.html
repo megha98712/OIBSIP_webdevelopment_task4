@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="box" id="register-box">
+    <h2>Create Account</h2>
+    <input type="text" id="reg-user" placeholder="Enter Username">
+    <input type="password" id="reg-pass" placeholder="Enter Password">
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+    <p id="reg-msg"></p>
+</div>
+
+<div class="box" id="login-box" style="display:none;">
+    <h2>Login</h2>
+    <input type="text" id="log-user" placeholder="Enter Username">
+    <input type="password" id="log-pass" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <span onclick="showRegister()">Register</span></p>
+    <p id="log-msg"></p>
+</div>
+
+<div class="box" id="secure-page" style="display:none;">
+    <h2>Secure Page</h2>
+    <p id="welcome"></p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
